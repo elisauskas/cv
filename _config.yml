@@ -9,30 +9,15 @@ version: 2
 name: Edgaras Lisauskas
 title: System Engineer / DevOps
 email: edgaras.lisauskas@icloud.com
-website: tbd
+phone: +37065268437
 
 # Dark Mode (true/false/never)
 darkmode: true
 
 # Social links
 github_username:  elisauskas
-stackoverflow_username: "elisauskas"
+stackoverflow_username: "8727855"
 linkedin_username: elisauskas
-
-# Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me
