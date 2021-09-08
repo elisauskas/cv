@@ -83,15 +83,13 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in systems administration and software engineering some of my other interests and hobbies are:
-      - Football
+      - Repairing cars and motorcycles
       - Reading books
-      - Driving scenic roads and walking scenery walkways
-
-      Look at this cool image  
-      ![Trees](images/landscape-trees.jpg "Trees")
+      - Playing football
+      - Driving scenic roads and long walks while exploring nature or cities
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
