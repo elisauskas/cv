@@ -23,7 +23,7 @@ linkedin_username: elisauskas
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi 👋, 
+ Hi 👋, 
   
   My name's Edgaras and I'm a System Engineer at Wix.com. As well as administrating systems I also have experience building infrastructure and setting up CI/CD. I have worked at a number of companies gaining teamwork and leadership skills.
 
@@ -44,7 +44,7 @@ about_content: | # this will include new lines to allow paragraphs
   - Distributed messaging: <mark style="background: #E0E0E0">RabbitMQ</mark>, <mark style="background: #E0E0E0">Kafka</mark>
   - Programming Languages: <mark style="background: #FFFFFF">Bash</mark>, <mark style="background: #E0E0E0">Python</mark>, <mark style="background: #A0A0A0">Rust</mark>, <mark style="background: #A0A0A0">Go</mark>
   - Secret Management: <mark style="background: #E0E0E0">Vault</mark>
-  - VPN: <mark style="background: #A0A0A0">OpenVPN</mark>
+  - VPN: <mark style="background: #A0A0A0">OpenVPN</mark> 
 
 content:
   - title: Experience # Title for the section
@@ -107,7 +107,7 @@ content:
       - layout: left
         title: Instituto Politécnico de Viana do Castelo
         link: www.ipvc.pt/en/
-        caption: 2008 - 2012
+        caption: 2010 - 2011
         sub_title: BSc Engenharia Eletrónica e Redes de Computadores (Erasmus studies)
         quote: >
           The Polytechnic Institute of Viana do Castelo (IPVC) was founded in 1980. Is a regional institution, whose aims are a qualified human, cultural, scientific, technical and professional training, to carry out necessary research to accomplish its mission and to cooperate with the regional community of Alto-Minho, particularly with its productive and entrepreneurial sectors.
