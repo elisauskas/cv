@@ -68,8 +68,6 @@ content:
           Shift4 Payments (NYSE: FOUR) is a leading provider of integrated payment processing and technology solutions, delivering a complete omnichannel ecosystem that extends beyond payments to include a wide range of commerce-enabling services.
         description: | # this will include new lines to allow paragraphs
           Administration of all infrastructure components and systems.
-          
-          More significant projects:
             - Migrated various kinds of projects from Jenkins to GitLab CI and decommissioned Jenkins.
             - Migrated services from AWS ElasticBeanstalk to AWS ECS.
 
@@ -82,8 +80,6 @@ content:
           Ruptela develops and manufactures GPS tracking hardware, real-time tracking software and provides other related services.
         description: | # this will include new lines to allow paragraphs
           Administration of internal systems, maintenance of GPS tracking system infrastructure components, IT support.
-          
-          More significant project:
             - Upgraded versions of all services related to GPS tracking system infrastructure in all locations worldwide.
 
       - layout: left
@@ -95,8 +91,6 @@ content:
           Ruptela develops and manufactures GPS tracking hardware, real-time tracking software and provides other related services.
         description: | # this will include new lines to allow paragraphs
           Dedicated VIP clients support agent with 3rd level support responsibilities.
-          
-          More significant project: 
             - Supported migration of GPS tracking servers from one geographical location to another and migration (reconfiguration) of all GPS tracking devices. Cooperated with business analysts and developers, defined a mechanism for automating the whole reconfiguration process.
 
   - title: Education # Title for the section
