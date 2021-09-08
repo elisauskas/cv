@@ -30,7 +30,7 @@ about_content: | # this will include new lines to allow paragraphs
   Stack of technologies I am familiar with: 
   - Cloud Platforms: <mark>AWS</mark>, <mark>GCP</mark>
   - Operating Systems: <mark>Ubuntu</mark>, <mark>CentOS</mark>, <mark>OS X</mark>, <mark>Windows</mark>
-  - Applications Platforms: <mark>Kubernetes</mark>, <mark>Docker</mark>, <mark>Docker Compose</mark>, <mark>OpenVZ</mark>
+  - Applications Platforms: <mark>Kubernetes</mark>, <mark>EKS</mark>, <mark>GKE</mark>, <mark>Docker</mark>, <mark>Docker Compose</mark>, <mark>OpenVZ</mark>
   - Container Image Registry: <mark>Docker Hub</mark>, <mark>ECR</mark>, <mark>GCR</mark>, <mark>Artifactory</mark>
   - Automation & Orchestration: <mark>Terraform</mark>, <mark>Atlantis</mark>, <mark>Packer</mark>, <mark>Chef</mark>
   - Continuous Integration & Delivery: <mark>GitLab CI</mark>, <mark>GitHub Actions</mark>, <mark>Jenkins</mark>, <mark>TeamCity</mark>
