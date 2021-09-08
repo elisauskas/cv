@@ -76,9 +76,21 @@ content:
     content:
       - layout: left
         title: Vilnius Tech
+        link: www.vilniustech.lt
         caption: 2008 - 2012
         sub_title: BSc Telecommunications Engineering
-        description: Vilnius Gediminas Technical University (VILNIUS TECH) www.vilniustech.lt is a leading higher education institution situated in Vilnius the capital of Lithuania. Established in 1956 VILNIUS TECH is one of the biggest research universities in country with a focus on technologies and engineering and strong emphasis on university-business cooperation.
+        quote: >
+          Vilnius Gediminas Technical University (VILNIUS TECH) is a leading higher education institution situated in Vilnius the capital of Lithuania. Established in 1956 VILNIUS TECH is one of the biggest research universities in country with a focus on technologies and engineering and strong emphasis on university-business cooperation.
+      - layout: left
+        title: Instituto Politécnico de Viana do Castelo
+        caption: 2008 - 2012
+        sub_title: BSc Engenharia Eletrónica e Redes de Computadores (Erasmus studies)
+        quote: >
+          The Polytechnic Institute of Viana do Castelo (IPVC) was founded in 1980. Is a regional institution, whose aims are a qualified human, cultural, scientific, technical and professional training, to carry out necessary research to accomplish its mission and to cooperate with the regional community of Alto-Minho, particularly with its productive and entrepreneurial sectors.
+      - layout: left
+        title: Lieporių vidurinė mokykla, Šiauliai (Lithuania)
+        caption: 1996 - 2008
+        sub_title: Secondary education
 
   - title: A Little More About Me
     layout: text
