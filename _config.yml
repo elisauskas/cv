@@ -24,6 +24,7 @@ linkedin_username: elisauskas
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, 
+  
   my name's Edgaras and I'm a System Engineer at Wix.com. As well as administrating systems I also have experience building infrastructure and setting up CI/CD. I have worked at a number of companies gaining teamwork and leadership skills.
 
   Stack of technologies I am familiar with: 
@@ -56,7 +57,7 @@ content:
         quote: >
           Wix.com is a leading cloud-based development platform with millions of users worldwide, it makes easy for everyone to create a beautiful, professional web presence.
         description: | # this will include new lines to allow paragraphs
-          Text there 
+           
       
       - layout: left
         title: Shift4 Payments
@@ -66,7 +67,10 @@ content:
         quote: >
           Shift4 Payments (NYSE: FOUR) is a leading provider of integrated payment processing and technology solutions, delivering a complete omnichannel ecosystem that extends beyond payments to include a wide range of commerce-enabling services.
         description: | # this will include new lines to allow paragraphs
-          Text there 
+          Administration of all infrastructure components and systems.
+          More significant projects:
+            - Migrated various kinds of projects from Jenkins to GitLab CI and decommissioned Jenkins.
+            - Migrated services from AWS ElasticBeanstalk to AWS ECS.
 
       - layout: left
         title: Ruptela, UAB
@@ -76,7 +80,9 @@ content:
         quote: >
           Ruptela develops and manufactures GPS tracking hardware, real-time tracking software and provides other related services.
         description: | # this will include new lines to allow paragraphs
-          Text there
+          Administration of internal systems, maintenance of GPS tracking system infrastructure components, IT support.
+          More significant project:
+            - Upgraded versions of all services related to GPS tracking system infrastructure in all locations worldwide.
 
       - layout: left
         title: Ruptela, UAB
@@ -86,7 +92,9 @@ content:
         quote: >
           Ruptela develops and manufactures GPS tracking hardware, real-time tracking software and provides other related services.
         description: | # this will include new lines to allow paragraphs
-          Text there
+          Dedicated VIP clients support agent with 3rd level support responsibilities.
+          More significant project: 
+            - Supported migration of GPS tracking servers from one geographical location to another and migration(reconfiguration) of all GPS tracking devices. Cooperated with business analysts and developers, defined a mechanism for automating the whole reconfiguration process.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
