@@ -57,7 +57,7 @@ content:
         quote: >
           Wix.com is a leading cloud-based development platform with millions of users worldwide, it makes easy for everyone to create a beautiful, professional web presence.
         description: | # this will include new lines to allow paragraphs
-           
+           Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components.
       
       - layout: left
         title: Shift4 Payments
