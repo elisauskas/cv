@@ -30,21 +30,21 @@ about_content: | # this will include new lines to allow paragraphs
   Stack of technologies I am familiar with:
   - Example realm: <mark style="background: #006600">Day to day working experience</mark>, <mark style="background: #CCC000">Have been working from time to time</mark>, <mark style="background: #CC6600">Worked a while ago and know what it is</mark>
   - Cloud Platforms: <mark style="background: #006600">AWS</mark>, <mark style="background: #CCC000">GCP</mark>
-  - Operating Systems: <mark style="background: #006600"Ubuntu</mark>, <mark style="background: #006600"CentOS</mark>, <mark style="background: #006600"OS X</mark>, <mark style="background: #CCC000"Windows</mark>
-  - Applications Platforms: <mark style="background: #006600"Kubernetes</mark>, <mark style="background: #006600"EKS</mark>, <mark style="background: #CCC000"GKE</mark>, <mark style="background: #CCC000"Docker</mark>, <mark style="background: #CC6600"Docker Compose</mark>, <mark style="background: #CC6600"OpenVZ</mark>
-  - Container Image Registry: <mark style="background: #CCC000"Docker Hub</mark>, <mark style="background: #CCC000"ECR</mark>, <mark style="background: #CCC000"GCR</mark>, <mark style="background: #CCC000"Artifactory</mark>
-  - Automation & Orchestration: <mark style="background: #006600"Terraform</mark>, <mark style="background: #CCC000"Atlantis</mark>, <mark style="background: #CCC000"Packer</mark>, <mark style="background: #CCC000"Chef</mark>
-  - Continuous Integration & Delivery: <mark style="background: #CCC000"GitLab CI</mark>, <mark style="background: #CCC000"GitHub Actions</mark>, <mark style="background: #CC6600"Jenkins</mark>, <mark style="background: #CCC000"TeamCity</mark>
-  - Source Code Management: <mark style="background: #006600"GitLab</mark>, <mark style="background: #006600"GitHub</mark>
-  - Web Servers: <mark style="background: #CCC000"Nginx</mark>, <mark style="background: #CC6600"Apache</mark>
-  - SSL: <mark style="background: #006600"Let's Encrypt</mark>, <mark style="background: #006600"ACM</mark>
-  - Databases: <mark style="background: #006600"Etcd</mark>, <mark style="background: #CCC000"PostgreSQL</mark>, <mark style="background: #CCC000"MySQL</mark>, <mark style="background: #CC6600"ElasticSearch</mark>
-  - Observability & Monitoring: <mark style="background: #CCC000"Prometheus</mark>, <mark style="background: #CCC000"Grafana</mark>, <mark style="background: #CC6600"Zabbix</mark>
-  - Service Discovery & Service Mesh: <mark style="background: #006600"Consul</mark>
-  - Distributed messaging: <mark style="background: #CCC000"RabbitMQ</mark>, <mark style="background: #CCC000"Kafka</mark>
-  - Programming Languages: <mark style="background: #006600"Bash</mark>, <mark style="background: #CCC000"Python</mark>, <mark style="background: #CC6600"Rust</mark>, <mark style="background: #CC6600"Go</mark>
-  - Secret Management: <mark style="background: #CCC000"Vault</mark>
-  - VPN: <mark style="background: #CC6600"OpenVPN</mark>
+  - Operating Systems: <mark style="background: #006600">Ubuntu</mark>, <mark style="background: #006600">CentOS</mark>, <mark style="background: #006600">OS X</mark>, <mark style="background: #CCC000">Windows</mark>
+  - Applications Platforms: <mark style="background: #006600">Kubernetes</mark>, <mark style="background: #006600">EKS</mark>, <mark style="background: #CCC000">GKE</mark>, <mark style="background: #CCC000">Docker</mark>, <mark style="background: #CC6600">Docker Compose</mark>, <mark style="background: #CC6600">OpenVZ</mark>
+  - Container Image Registry: <mark style="background: #CCC000">Docker Hub</mark>, <mark style="background: #CCC000">ECR</mark>, <mark style="background: #CCC000">GCR</mark>, <mark style="background: #CCC000">Artifactory</mark>
+  - Automation & Orchestration: <mark style="background: #006600">Terraform</mark>, <mark style="background: #CCC000">Atlantis</mark>, <mark style="background: #CCC000">Packer</mark>, <mark style="background: #CCC000">Chef</mark>
+  - Continuous Integration & Delivery: <mark style="background: #CCC000">GitLab CI</mark>, <mark style="background: #CCC000">GitHub Actions</mark>, <mark style="background: #CC6600">Jenkins</mark>, <mark style="background: #CCC000">TeamCity</mark>
+  - Source Code Management: <mark style="background: #006600">GitLab</mark>, <mark style="background: #006600">GitHub</mark>
+  - Web Servers: <mark style="background: #CCC000">Nginx</mark>, <mark style="background: #CC6600">Apache</mark>
+  - SSL: <mark style="background: #006600">Let's Encrypt</mark>, <mark style="background: #006600">ACM</mark>
+  - Databases: <mark style="background: #006600">Etcd</mark>, <mark style="background: #CCC000">PostgreSQL</mark>, <mark style="background: #CCC000">MySQL</mark>, <mark style="background: #CC6600">ElasticSearch</mark>
+  - Observability & Monitoring: <mark style="background: #CCC000">Prometheus</mark>, <mark style="background: #CCC000">Grafana</mark>, <mark style="background: #CC6600">Zabbix</mark>
+  - Service Discovery & Service Mesh: <mark style="background: #006600">Consul</mark>
+  - Distributed messaging: <mark style="background: #CCC000">RabbitMQ</mark>, <mark style="background: #CCC000">Kafka</mark>
+  - Programming Languages: <mark style="background: #006600">Bash</mark>, <mark style="background: #CCC000">Python</mark>, <mark style="background: #CC6600">Rust</mark>, <mark style="background: #CC6600">Go</mark>
+  - Secret Management: <mark style="background: #CCC000">Vault</mark>
+  - VPN: <mark style="background: #CC6600">OpenVPN</mark>
 
 content:
   - title: Experience # Title for the section
