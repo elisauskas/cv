@@ -108,6 +108,10 @@ about_content: | # this will include new lines to allow paragraphs
     <mark style="background: #A0A0A0">Go</mark>
   - Secret Management: 
     <mark style="background: #E0E0E0">Vault</mark>
+  - Project Management & Knowledge Base:
+    <mark style="background: #FFFFFF">Monday</mark>
+    <mark style="background: #FFFFFF">Jira</mark>
+    <mark style="background: #E0E0E0">Confluence</mark>
 
 content:
   - title: Experience # Title for the section
