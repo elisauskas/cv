@@ -23,9 +23,10 @@ linkedin_username: elisauskas
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Edgaras and I'm a System Engineer at Wix.com. As well as administrating systems I also have experience building infrastructure and setting up CI/CD. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, 
+  my name's Edgaras and I'm a System Engineer at Wix.com. As well as administrating systems I also have experience building infrastructure and setting up CI/CD. I have worked at a number of companies gaining teamwork and leadership skills.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Kubernetes</mark>
+  Stack of technologies I am familiar with: <mark>AWS</mark> and <mark>Kubernetes</mark>
 
 content:
   - title: Experience # Title for the section
@@ -83,16 +84,20 @@ content:
           Vilnius Gediminas Technical University (VILNIUS TECH) is a leading higher education institution situated in Vilnius the capital of Lithuania. Established in 1956 VILNIUS TECH is one of the biggest research universities in country with a focus on technologies and engineering and strong emphasis on university-business cooperation.
       - layout: left
         title: Instituto Politécnico de Viana do Castelo
+        link: https://www.ipvc.pt/en/
         caption: 2008 - 2012
         sub_title: BSc Engenharia Eletrónica e Redes de Computadores (Erasmus studies)
         quote: >
           The Polytechnic Institute of Viana do Castelo (IPVC) was founded in 1980. Is a regional institution, whose aims are a qualified human, cultural, scientific, technical and professional training, to carry out necessary research to accomplish its mission and to cooperate with the regional community of Alto-Minho, particularly with its productive and entrepreneurial sectors.
       - layout: left
         title: Lieporių vidurinė mokykla, Šiauliai (Lithuania)
+        link: http://www.lieporiai.lt/
         caption: 1996 - 2008
         sub_title: Secondary education
+        quote: > 
+          12 years a slave
 
-  - title: A Little More About Me
+  - title: A Little Bit More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in systems administration and software engineering some of my other interests and hobbies are:
