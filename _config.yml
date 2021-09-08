@@ -36,7 +36,7 @@ content:
       - <p style="font-style: italic;font-weight: bold;">Example realm:
         <mark style="background: #FFFFFF">Day to day</mark>,
         <mark style="background: #E0E0E0">Time to time</mark>,
-        <mark style="background: #A0A0A0">A while ago not much</mark></p><br><br>
+        <mark style="background: #A0A0A0">A while ago not much</mark></p><br>
       - Cloud Platforms: 
         <mark style="background: #FFFFFF">AWS</mark>,
         <mark style="background: #E0E0E0">GCP</mark>
