@@ -28,35 +28,86 @@ about_content: | # this will include new lines to allow paragraphs
   My name's Edgaras and I'm a System Engineer at Wix.com. As well as administrating systems I also have experience building infrastructure and setting up CI/CD. I have worked at a number of companies gaining teamwork and leadership skills.
 
   Stack of technologies I am familiar with:
-  - <p style="font-style: italic;font-weight: bold;">Example realm:</p> <mark style="background: #FFFFFF">Day to day</mark>, <mark style="background: #E0E0E0">Time to time</mark>, <mark style="background: #A0A0A0">A while ago and not much</mark><br><br>
-  - Cloud Platforms: <mark style="background: #FFFFFF">AWS</mark>, <mark style="background: #E0E0E0">GCP</mark>
+  - <p style="font-style: italic;font-weight: bold;">Example realm:</p> 
+    <mark style="background: #FFFFFF">Day to day</mark>,
+    <mark style="background: #E0E0E0">Time to time</mark>,
+    <mark style="background: #A0A0A0">A while ago not much</mark><br><br>
+  - Cloud Platforms: 
+    <mark style="background: #FFFFFF">AWS</mark>,
+    <mark style="background: #E0E0E0">GCP</mark>
   - Amazon Web Services: 
-    <mark style="background: #FFFFFF">IAM</mark>, 
-    <mark style="background: #FFFFFF">VPC</mark>, 
-    <mark style="background: #FFFFFF">EC2</mark>, 
+    <mark style="background: #FFFFFF">IAM</mark>,
+    <mark style="background: #FFFFFF">CloudTrail</mark>,
+    <mark style="background: #FFFFFF">VPC</mark>,
+    <mark style="background: #FFFFFF">EC2</mark>,
     <mark style="background: #FFFFFF">S3</mark>,
-    <mark style="background: #FFFFFF">Lambda</mark>, 
+    <mark style="background: #FFFFFF">Lambda</mark>,
+    <mark style="background: #FFFFFF">Route53</mark>,
     <mark style="background: #FFFFFF">EKS</mark>,
-    <mark style="background: #E0E0E0">SQS</mark>,
-    <mark style="background: #E0E0E0">SNS</mark>,
     <mark style="background: #E0E0E0">CloudFront</mark>,
     <mark style="background: #E0E0E0">CloudWatch</mark>,
     <mark style="background: #E0E0E0">ECS</mark>,
-    <mark style="background: #E0E0E0">RDS</mark>
-  - Operating Systems: <mark style="background: #FFFFFF">Ubuntu</mark>, <mark style="background: #FFFFFF">CentOS</mark>, <mark style="background: #FFFFFF">OS X</mark>, <mark style="background: #E0E0E0">Windows</mark>
-  - Applications Platforms: <mark style="background: #FFFFFF">Kubernetes</mark>, <mark style="background: #FFFFFF">EKS</mark>, <mark style="background: #E0E0E0">GKE</mark>, <mark style="background: #E0E0E0">Docker</mark>, <mark style="background: #A0A0A0">Docker Compose</mark>, <mark style="background: #A0A0A0">OpenVZ</mark>
-  - Container Image Registry: <mark style="background: #E0E0E0">Docker Hub</mark>, <mark style="background: #E0E0E0">ECR</mark>, <mark style="background: #E0E0E0">GCR</mark>, <mark style="background: #E0E0E0">Artifactory</mark>
-  - Automation & Orchestration: <mark style="background: #FFFFFF">Terraform</mark>, <mark style="background: #E0E0E0">Atlantis</mark>, <mark style="background: #E0E0E0">Packer</mark>, <mark style="background: #E0E0E0">Chef</mark>
-  - Continuous Integration & Delivery: <mark style="background: #E0E0E0">GitLab CI</mark>, <mark style="background: #E0E0E0">GitHub Actions</mark>, <mark style="background: #E0E0E0">TeamCity</mark>, <mark style="background: #A0A0A0">Jenkins</mark>
-  - Source Code Management: <mark style="background: #FFFFFF">GitLab</mark>, <mark style="background: #FFFFFF">GitHub</mark>
-  - Web Servers: <mark style="background: #E0E0E0">Nginx</mark>, <mark style="background: #A0A0A0">Apache</mark>
-  - SSL: <mark style="background: #E0E0E0">Let's Encrypt</mark>, <mark style="background: #E0E0E0">ACM</mark>
-  - Databases: <mark style="background: #FFFFFF">Etcd</mark>, <mark style="background: #E0E0E0">PostgreSQL</mark>, <mark style="background: #E0E0E0">MySQL</mark>, <mark style="background: #A0A0A0">ElasticSearch</mark>
-  - Observability & Monitoring: <mark style="background: #E0E0E0">Prometheus</mark>, <mark style="background: #E0E0E0">Grafana</mark>, <mark style="background: #A0A0A0">Zabbix</mark>
-  - Service Discovery & Service Mesh: <mark style="background: #FFFFFF">Consul</mark>
-  - Distributed messaging: <mark style="background: #E0E0E0">RabbitMQ</mark>, <mark style="background: #E0E0E0">Kafka</mark>
-  - Programming Languages: <mark style="background: #FFFFFF">Bash</mark>, <mark style="background: #E0E0E0">Python</mark>, <mark style="background: #A0A0A0">Rust</mark>, <mark style="background: #A0A0A0">Go</mark>
-  - Secret Management: <mark style="background: #E0E0E0">Vault</mark>
+    <mark style="background: #E0E0E0">ECR</mark>,
+    <mark style="background: #E0E0E0">ACM</mark>,
+    <mark style="background: #A0A0A0">RDS</mark>
+    <mark style="background: #A0A0A0">SQS</mark>,
+    <mark style="background: #A0A0A0">SNS</mark>,
+  - Operating Systems: 
+    <mark style="background: #FFFFFF">Ubuntu</mark>,
+    <mark style="background: #FFFFFF">CentOS</mark>,
+    <mark style="background: #FFFFFF">OS X</mark>,
+    <mark style="background: #E0E0E0">Windows</mark>
+  - Applications Platforms: 
+    <mark style="background: #FFFFFF">Kubernetes</mark>,
+    <mark style="background: #FFFFFF">EKS</mark>,
+    <mark style="background: #E0E0E0">GKE</mark>,
+    <mark style="background: #E0E0E0">Docker</mark>,
+    <mark style="background: #A0A0A0">Docker Compose</mark>,
+    <mark style="background: #A0A0A0">OpenVZ</mark>
+  - Container Image Registry: 
+    <mark style="background: #E0E0E0">Docker Hub</mark>,
+    <mark style="background: #E0E0E0">ECR</mark>,
+    <mark style="background: #E0E0E0">GCR</mark>,
+    <mark style="background: #E0E0E0">Artifactory</mark>
+  - Automation & Orchestration: 
+    <mark style="background: #FFFFFF">Terraform</mark>,
+    <mark style="background: #E0E0E0">Atlantis</mark>,
+    <mark style="background: #E0E0E0">Packer</mark>,
+    <mark style="background: #E0E0E0">Chef</mark>
+  - Continuous Integration & Delivery: 
+    <mark style="background: #E0E0E0">GitLab CI</mark>,
+    <mark style="background: #E0E0E0">GitHub Actions</mark>,
+    <mark style="background: #E0E0E0">TeamCity</mark>,
+    <mark style="background: #A0A0A0">Jenkins</mark>
+  - Source Code Management: 
+    <mark style="background: #FFFFFF">GitLab</mark>,
+    <mark style="background: #FFFFFF">GitHub</mark>
+  - Web Servers: 
+    <mark style="background: #E0E0E0">Nginx</mark>,
+    <mark style="background: #A0A0A0">Apache</mark>
+  - SSL: 
+    <mark style="background: #E0E0E0">Let's Encrypt</mark>,
+    <mark style="background: #E0E0E0">ACM</mark>
+  - Databases: <mark style="background: #FFFFFF">Etcd</mark>,
+    <mark style="background: #E0E0E0">PostgreSQL</mark>,
+    <mark style="background: #E0E0E0">MySQL</mark>,
+    <mark style="background: #A0A0A0">ElasticSearch</mark>
+  - Observability & Monitoring: 
+    <mark style="background: #E0E0E0">Prometheus</mark>,
+    <mark style="background: #E0E0E0">Grafana</mark>,
+    <mark style="background: #A0A0A0">Zabbix</mark>
+  - Service Discovery & Service Mesh: 
+    <mark style="background: #FFFFFF">Consul</mark>
+  - Distributed messaging: 
+    <mark style="background: #E0E0E0">RabbitMQ</mark>,
+    <mark style="background: #E0E0E0">Kafka</mark>
+  - Programming Languages: 
+    <mark style="background: #FFFFFF">Bash</mark>,
+    <mark style="background: #E0E0E0">Python</mark>,
+    <mark style="background: #A0A0A0">Rust</mark>,
+    <mark style="background: #A0A0A0">Go</mark>
+  - Secret Management: 
+    <mark style="background: #E0E0E0">Vault</mark>
 
 content:
   - title: Experience # Title for the section
