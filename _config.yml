@@ -67,7 +67,7 @@ content:
         quote: >
           Shift4 Payments (NYSE: FOUR) is a leading provider of integrated payment processing and technology solutions, delivering a complete omnichannel ecosystem that extends beyond payments to include a wide range of commerce-enabling services.
         description: | # this will include new lines to allow paragraphs
-          Administration of all infrastructure components and systems.
+          Maintenance of all infrastructure components and systems, CI/CD pipelines set up for the new projects and preparation of environments.
             - Migrated various kinds of projects from Jenkins to GitLab CI and decommissioned Jenkins.
             - Migrated services from AWS ElasticBeanstalk to AWS ECS.
 
