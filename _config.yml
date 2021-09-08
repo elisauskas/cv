@@ -31,12 +31,12 @@ about_content: | # this will include new lines to allow paragraphs
   - Operating Systems: <mark>Ubuntu</mark>, <mark>CentOS</mark>, <mark>OS X</mark>, <mark>Windows</mark>
   - Applications Platforms: <mark>Kubernetes</mark>, <mark>Docker</mark>, <mark>Docker Compose</mark>, <mark>OpenVZ</mark>
   - Container Image Registry: <mark>Docker Hub</mark>, <mark>ECR</mark>, <mark>GCR</mark>, <mark>Artifactory</mark>
-  - Automation & Orchestration: <mark>Terraform</mark>, <mark>Atlantis</mark>, <mark>Packer</mark>, <mark>Chef</mark>, <mark>Vagrant</mark>
+  - Automation & Orchestration: <mark>Terraform</mark>, <mark>Atlantis</mark>, <mark>Packer</mark>, <mark>Chef</mark>
   - Continuous Integration & Delivery: <mark>GitLab CI</mark>, <mark>GitHub Actions</mark>, <mark>Jenkins</mark>, <mark>TeamCity</mark>
   - Source Code Management: <mark>GitLab</mark>, <mark>GitHub</mark>
   - Web Servers: <mark>Nginx</mark>, <mark>Apache</mark>
-  - SSL: <mark>Let's Encrypt</mark>
-  - Databases: <mark>Etcd</mark>, <mark>PostgreSQL</mark>, <mark>MySQL</mark>, <mark>MongoDB</mark>, <mark>ElasticSearch</mark>
+  - SSL: <mark>Let's Encrypt</mark>, <mark>ACM</mark>
+  - Databases: <mark>Etcd</mark>, <mark>PostgreSQL</mark>, <mark>MySQL</mark>, <mark>ElasticSearch</mark>
   - Observability & Monitoring: <mark>Prometheus</mark>, <mark>Grafana</mark>, <mark>Zabbix</mark>
   - Service Discovery & Service Mesh: <mark>Consul</mark>
   - Distributed messaging: <mark>RabbitMQ</mark>, <mark>Kafka</mark>
