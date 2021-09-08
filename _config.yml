@@ -30,6 +30,19 @@ about_content: | # this will include new lines to allow paragraphs
   Stack of technologies I am familiar with:
   - <p style="font-style: italic;font-weight: bold;">Example realm:</p> <mark style="background: #FFFFFF">Day to day</mark>, <mark style="background: #E0E0E0">Time to time</mark>, <mark style="background: #A0A0A0">A while ago and not much</mark><br><br>
   - Cloud Platforms: <mark style="background: #FFFFFF">AWS</mark>, <mark style="background: #E0E0E0">GCP</mark>
+  - Amazon Web Services: 
+    <mark style="background: #FFFFFF">IAM</mark>, 
+    <mark style="background: #FFFFFF">VPC</mark>, 
+    <mark style="background: #FFFFFF">EC2</mark>, 
+    <mark style="background: #FFFFFF">S3</mark>,
+    <mark style="background: #FFFFFF">Lambda</mark>, 
+    <mark style="background: #FFFFFF">EKS</mark>,
+    <mark style="background: #E0E0E0">SQS</mark>,
+    <mark style="background: #E0E0E0">SNS</mark>,
+    <mark style="background: #E0E0E0">CloudFront</mark>,
+    <mark style="background: #E0E0E0">CloudWatch</mark>,
+    <mark style="background: #E0E0E0">ECS</mark>,
+    <mark style="background: #E0E0E0">RDS</mark>
   - Operating Systems: <mark style="background: #FFFFFF">Ubuntu</mark>, <mark style="background: #FFFFFF">CentOS</mark>, <mark style="background: #FFFFFF">OS X</mark>, <mark style="background: #E0E0E0">Windows</mark>
   - Applications Platforms: <mark style="background: #FFFFFF">Kubernetes</mark>, <mark style="background: #FFFFFF">EKS</mark>, <mark style="background: #E0E0E0">GKE</mark>, <mark style="background: #E0E0E0">Docker</mark>, <mark style="background: #A0A0A0">Docker Compose</mark>, <mark style="background: #A0A0A0">OpenVZ</mark>
   - Container Image Registry: <mark style="background: #E0E0E0">Docker Hub</mark>, <mark style="background: #E0E0E0">ECR</mark>, <mark style="background: #E0E0E0">GCR</mark>, <mark style="background: #E0E0E0">Artifactory</mark>
@@ -44,7 +57,6 @@ about_content: | # this will include new lines to allow paragraphs
   - Distributed messaging: <mark style="background: #E0E0E0">RabbitMQ</mark>, <mark style="background: #E0E0E0">Kafka</mark>
   - Programming Languages: <mark style="background: #FFFFFF">Bash</mark>, <mark style="background: #E0E0E0">Python</mark>, <mark style="background: #A0A0A0">Rust</mark>, <mark style="background: #A0A0A0">Go</mark>
   - Secret Management: <mark style="background: #E0E0E0">Vault</mark>
-  - VPN: <mark style="background: #A0A0A0">OpenVPN</mark> 
 
 content:
   - title: Experience # Title for the section
