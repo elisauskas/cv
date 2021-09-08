@@ -41,7 +41,7 @@ about_content: | # this will include new lines to allow paragraphs
   - Observability & Monitoring: <mark>Prometheus</mark>, <mark>Grafana</mark>, <mark>Zabbix</mark>
   - Service Discovery & Service Mesh: <mark>Consul</mark>
   - Distributed messaging: <mark>RabbitMQ</mark>, <mark>Kafka</mark>
-  - Programming Languages: <mark>Python</mark>, <mark>Rust</mark>, <mark>Go</mark>
+  - Programming Languages: <mark>Bash</mark>, <mark>Python</mark>, <mark>Rust</mark>, <mark>Go</mark>
   - Secret Management: <mark>Vault</mark>
   - VPN: <mark>OpenVPN</mark>
 
