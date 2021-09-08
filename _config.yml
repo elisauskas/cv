@@ -28,20 +28,20 @@ about_content: | # this will include new lines to allow paragraphs
   My name's Edgaras and I'm a System Engineer at Wix.com. As well as administrating systems I also have experience building infrastructure and setting up CI/CD. I have worked at a number of companies gaining teamwork and leadership skills.
 
   Stack of technologies I am familiar with: 
-  - Cloud Platforms: <mark style="background: green">AWS</mark>, <mark>GCP</mark>
-  - Operating Systems: <mark>Ubuntu</mark>, <mark>CentOS</mark>, <mark style="background: green">OS X</mark>, <mark>Windows</mark>
-  - Applications Platforms: <mark>Kubernetes</mark>, <mark style="background: green">EKS</mark>, <mark>GKE</mark>, <mark>Docker</mark>, <mark>Docker Compose</mark>, <mark>OpenVZ</mark>
+  - Cloud Platforms: <mark>AWS</mark>, <mark>GCP</mark>
+  - Operating Systems: <mark>Ubuntu</mark>, <mark>CentOS</mark>, <mark>OS X</mark>, <mark>Windows</mark>
+  - Applications Platforms: <mark>Kubernetes</mark>, <mark>EKS</mark>, <mark>GKE</mark>, <mark>Docker</mark>, <mark>Docker Compose</mark>, <mark>OpenVZ</mark>
   - Container Image Registry: <mark>Docker Hub</mark>, <mark>ECR</mark>, <mark>GCR</mark>, <mark>Artifactory</mark>
-  - Automation & Orchestration: <mark style="background: green">Terraform</mark>, <mark>Atlantis</mark>, <mark>Packer</mark>, <mark>Chef</mark>
-  - Continuous Integration & Delivery: <mark style="background: green">GitLab CI</mark>, <mark>GitHub Actions</mark>, <mark>Jenkins</mark>, <mark>TeamCity</mark>
+  - Automation & Orchestration: <mark>Terraform</mark>, <mark>Atlantis</mark>, <mark>Packer</mark>, <mark>Chef</mark>
+  - Continuous Integration & Delivery: <mark>GitLab CI</mark>, <mark>GitHub Actions</mark>, <mark>Jenkins</mark>, <mark>TeamCity</mark>
   - Source Code Management: <mark>GitLab</mark>, <mark>GitHub</mark>
   - Web Servers: <mark>Nginx</mark>, <mark>Apache</mark>
   - SSL: <mark>Let's Encrypt</mark>, <mark>ACM</mark>
-  - Databases: <mark style="background: green">Etcd</mark>, <mark>PostgreSQL</mark>, <mark>MySQL</mark>, <mark>ElasticSearch</mark>
+  - Databases: <mark>Etcd</mark>, <mark>PostgreSQL</mark>, <mark>MySQL</mark>, <mark>ElasticSearch</mark>
   - Observability & Monitoring: <mark>Prometheus</mark>, <mark>Grafana</mark>, <mark>Zabbix</mark>
-  - Service Discovery & Service Mesh: <mark style="background: green">Consul</mark>
-  - Distributed messaging: <mark style="background: green">RabbitMQ</mark>, <mark>Kafka</mark>
-  - Programming Languages: <mark style="background: green">Bash</mark>, <mark>Python</mark>, <mark>Rust</mark>, <mark>Go</mark>
+  - Service Discovery & Service Mesh: <mark>Consul</mark>
+  - Distributed messaging: <mark>RabbitMQ</mark>, <mark>Kafka</mark>
+  - Programming Languages: <mark>Bash</mark>, <mark>Python</mark>, <mark>Rust</mark>, <mark>Go</mark>
   - Secret Management: <mark>Vault</mark>
   - VPN: <mark>OpenVPN</mark>
 
