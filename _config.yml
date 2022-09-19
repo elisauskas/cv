@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Edgaras Lisauskas
-title: System Engineer / DevOps
+title: Site Reliability Engineer / Systems Engineer
 email: edgaras.lisauskas@icloud.com
 phone: 0037065268437
 
@@ -16,8 +16,6 @@ darkmode: true
 
 # Social links
 github_username:  elisauskas
-stackoverflow_username: "8727855"
-linkedin_username: elisauskas
 
 # About Section
 # about_title: About Me
@@ -25,7 +23,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
  Hi 👋, 
   
-  I'm a DevOps Engineer who is inspired by open-minded professionals and motivated by progress, efficiency and results. 
+  I'm a Site Reliability Engineer who is inspired by open-minded professionals and motivated by progress, efficiency and results. 
   As well as administrating systems I also have experience defining infrastructure as a code and setting up CI/CD. 
   I have worked at a number of companies gaining teamwork and leadership skills.
 
@@ -125,11 +123,11 @@ content:
         title: Wix.com
         link: wix.com
         sub_title: System Engineer
-        caption: May 2020 - Present
+        caption: May 2020 - Sep 2022
         quote: >
           Wix.com is a leading cloud-based development platform with millions of users worldwide, it makes easy for everyone to create a beautiful, professional web presence.
         description: | # this will include new lines to allow paragraphs
-           Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components.
+          Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components.
       
       - layout: left
         title: Shift4 Payments
