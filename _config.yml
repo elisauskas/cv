@@ -120,8 +120,8 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Wix.com
-        link: wix.com
+        title: Workato
+        link: www.workato.com
         sub_title: System Engineer
         caption: Sep 2022 - Present
         quote: >
