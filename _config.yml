@@ -15,7 +15,7 @@ phone: 0037065268437
 darkmode: true
 
 # Social links
-github_username:  elisauskas
+github_username:  edgarasl
 
 # About Section
 # about_title: About Me
@@ -123,11 +123,21 @@ content:
         title: Wix.com
         link: wix.com
         sub_title: System Engineer
+        caption: Sep 2022 - Present
+        quote: >
+          Workato, a leader in Gartner MQ, is more than an iPaaS. It's an Intelligent Automation platform that can be used by both Business and IT.
+        description: | # this will include new lines to allow paragraphs
+          DESCRIPTION_PLACEHOLDER
+          
+      - layout: left
+        title: Wix.com
+        link: wix.com
+        sub_title: System Engineer
         caption: May 2020 - Sep 2022
         quote: >
           Wix.com is a leading cloud-based development platform with millions of users worldwide, it makes easy for everyone to create a beautiful, professional web presence.
         description: | # this will include new lines to allow paragraphs
-          Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components.
+          Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components on Amazon Web Services and Google Cloud Platform.
       
       - layout: left
         title: Shift4 Payments
