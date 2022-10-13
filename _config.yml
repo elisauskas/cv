@@ -122,12 +122,12 @@ content:
       - layout: left
         title: Workato
         link: www.workato.com
-        sub_title: System Engineer
+        sub_title: Senior Site Reliability Engineer
         caption: Sep 2022 - Present
         quote: >
           Workato, a leader in Gartner MQ, is more than an iPaaS. It's an Intelligent Automation platform that can be used by both Business and IT.
         description: | # this will include new lines to allow paragraphs
-          DESCRIPTION_PLACEHOLDER
+          
           
       - layout: left
         title: Wix.com
