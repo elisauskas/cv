@@ -23,9 +23,10 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
  Hi 👋, 
   
-  I'm a Site Reliability Engineer who is inspired by open-minded professionals and motivated by progress, efficiency and results. 
-  As well as administrating systems I also have experience defining infrastructure as a code and setting up CI/CD. 
-  I have worked at a number of companies gaining teamwork and leadership skills.
+  whoami: A Site Reliability Engineer who is inspired by open-minded professionals and motivated by progress, efficiency and results. 
+  As well as administrating systems I also have experience defining infrastructure as a code, monitoring and setting up CI/CD. 
+  I have worked at a number of companies gaining teamwork and leadership skills, so would fit into Site Reliability Engineer, 
+  Systems Architect or Cloud Architect/Consultant roles.
 
 content:
   - title: Technologies Stack # Title for the section
@@ -76,6 +77,7 @@ content:
         <mark style="background: #FFFFFF">Terraform</mark>,
         <mark style="background: #E0E0E0">Atlantis</mark>,
         <mark style="background: #E0E0E0">Packer</mark>,
+        <mark style="background: #E0E0E0">Kustomize</mark>,
         <mark style="background: #E0E0E0">Chef</mark>
       - Continuous Integration & Delivery: 
         <mark style="background: #E0E0E0">GitLab CI</mark>,
@@ -97,7 +99,10 @@ content:
         <mark style="background: #A0A0A0">ElasticSearch</mark>
       - Observability & Monitoring: 
         <mark style="background: #E0E0E0">Prometheus</mark>,
+        <mark style="background: #E0E0E0">VictoriaMetrics, VMalert, VMagent)</mark>,
         <mark style="background: #E0E0E0">Grafana</mark>,
+        <mark style="background: #E0E0E0">OpsGenie</mark>,
+        <mark style="background: #E0E0E0">Yet Another CloudWatch Exporter</mark>,
         <mark style="background: #A0A0A0">Zabbix</mark>
       - Service Discovery & Service Mesh: 
         <mark style="background: #FFFFFF">Consul</mark>
@@ -127,7 +132,10 @@ content:
         quote: >
           Workato, a leader in Gartner MQ, is more than an iPaaS. It's an Intelligent Automation platform that can be used by both Business and IT.
         description: | # this will include new lines to allow paragraphs
-          
+          Infrastructure as a code, SLIs/SLOs, being embedded in the development team, incidents response.
+            - Documented and created Yet Another CloudWatch Exporter implementation for global codified alerts solution of AWS managed services.
+            - Cleaned up AWS accounts from part of unused resources and scaled-down part of over-provisioned resources.
+            - Created and documented initial processes for ad-hoc task management and production changes.
           
       - layout: left
         title: Wix.com
@@ -137,7 +145,10 @@ content:
         quote: >
           Wix.com is a leading cloud-based development platform with millions of users worldwide, it makes easy for everyone to create a beautiful, professional web presence.
         description: | # this will include new lines to allow paragraphs
-          Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components on Amazon Web Services and Google Cloud Platform.
+          Infrastructure as a code, administration of Kubernetes clusters and other infrastructure systems related components on Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+            - Migrated k8s clusters through multiple kOps versions, the process required major terraform version upgrade as well and that increased project complexity.
+            - Took my part in the new datacenter buildout process on AWS, created internal DNS, ZooKeeper, Consul and EKS clusters via Terraform by utilising its modules feature.
+            - Created GKE clusters in different regions and validated them to be production ready.
       
       - layout: left
         title: Shift4 Payments
