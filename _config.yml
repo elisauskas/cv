@@ -23,8 +23,8 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
  Hi 👋, 
   
-  whoami: A Site Reliability Engineer who is inspired by open-minded professionals and motivated by progress, efficiency and results. 
-  As well as administrating systems I also have experience defining infrastructure as a code, monitoring and setting up CI/CD. 
+  I am a Site Reliability Engineer who is inspired by open-minded professionals and motivated by progress, efficiency, and results. 
+  As well as administrating systems I also have experience defining infrastructure as a code, monitoring, and setting up CI/CD. 
   I have worked at a number of companies gaining teamwork and leadership skills, so would fit into Site Reliability Engineer, 
   Systems Architect or Cloud Architect/Consultant roles.
 
@@ -99,7 +99,7 @@ content:
         <mark style="background: #A0A0A0">ElasticSearch</mark>
       - Observability & Monitoring: 
         <mark style="background: #E0E0E0">Prometheus</mark>,
-        <mark style="background: #E0E0E0">VictoriaMetrics, VMalert, VMagent)</mark>,
+        <mark style="background: #E0E0E0">VictoriaMetrics, VMalert, VMagent</mark>,
         <mark style="background: #E0E0E0">Grafana</mark>,
         <mark style="background: #E0E0E0">OpsGenie</mark>,
         <mark style="background: #E0E0E0">Yet Another CloudWatch Exporter</mark>,
