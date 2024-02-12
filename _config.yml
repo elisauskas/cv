@@ -138,7 +138,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           Infrastructure as a code, SLIs/SLOs, being embedded in the development team, incidents response.
             - Documented and created Yet Another CloudWatch Exporter implementation for global codified alerts solution of AWS managed services.
-            - Documented and created Prometheus Blackbox Exporter implementation for global codified alerts solution of AWS managed services.
+            - Documented and created Prometheus Blackbox Exporter implementation for external monitoring.
             - Cleaned up AWS accounts from part of unused resources and scaled-down part of over-provisioned resources.
             - Created and documented initial processes for ad-hoc task management and production changes.
           
