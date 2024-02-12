@@ -21,12 +21,12 @@ github_username:  edgarasl
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
- Hi 👋, 
+ Hello 👋, 
   
-  I am a Site Reliability Engineer who is inspired by open-minded professionals and motivated by progress, efficiency, and results. 
-  As well as administrating systems I also have experience defining infrastructure as a code, monitoring, and setting up CI/CD. 
-  I have worked at a number of companies gaining teamwork and leadership skills, so would fit into Site Reliability Engineer, 
-  Systems Architect or Cloud Architect/Consultant roles.
+  I am a Site Reliability Engineer who thrives on building rock-solid, cost-effective infrastructure that fuels innovation 🚀 
+  Driven by efficiency and results, I leverage a FinOps mindset to optimize resources and deliver maximum value 💹 
+  My expertise goes beyond system administration, I excel in Infrastructure as Code (IaC), application platforms administration, meticulous monitoring, and streamlined CI/CD pipelines 🛠️ 
+  Mastered my teamwork and leadership across diverse companies, I am confident I can excel as a Site Reliability Engineer, Systems Architect, or Cloud Architect/Consultant ⚙️ 
 
 content:
   - title: Technologies Stack # Title for the section
@@ -48,14 +48,16 @@ content:
         <mark style="background: #FFFFFF">Lambda</mark>,
         <mark style="background: #FFFFFF">Route53</mark>,
         <mark style="background: #FFFFFF">EKS</mark>,
+        <mark style="background: #FFFFFF">RDS</mark>,
+        <mark style="background: #FFFFFF">ElastiCache</mark>,
         <mark style="background: #E0E0E0">CloudFront</mark>,
         <mark style="background: #E0E0E0">CloudWatch</mark>,
         <mark style="background: #E0E0E0">ECS</mark>,
         <mark style="background: #E0E0E0">ECR</mark>,
         <mark style="background: #E0E0E0">ACM</mark>,
-        <mark style="background: #A0A0A0">RDS</mark>
+        <mark style="background: #E0E0E0">Secrets Manager</mark>,
         <mark style="background: #A0A0A0">SQS</mark>,
-        <mark style="background: #A0A0A0">SNS</mark>,
+        <mark style="background: #A0A0A0">SNS</mark>
       - Operating Systems: 
         <mark style="background: #FFFFFF">Ubuntu</mark>,
         <mark style="background: #FFFFFF">CentOS</mark>,
@@ -94,15 +96,16 @@ content:
         <mark style="background: #E0E0E0">Let's Encrypt</mark>,
         <mark style="background: #E0E0E0">ACM</mark>
       - Databases: <mark style="background: #FFFFFF">Etcd</mark>,
-        <mark style="background: #E0E0E0">PostgreSQL</mark>,
+        <mark style="background: #FFFFFF">PostgreSQL</mark>,
         <mark style="background: #E0E0E0">MySQL</mark>,
+        <mark style="background: #E0E0E0">Redis</mark>,
         <mark style="background: #A0A0A0">ElasticSearch</mark>
       - Observability & Monitoring: 
-        <mark style="background: #E0E0E0">Prometheus</mark>,
-        <mark style="background: #E0E0E0">VictoriaMetrics, VMalert, VMagent</mark>,
-        <mark style="background: #E0E0E0">Grafana</mark>,
-        <mark style="background: #E0E0E0">OpsGenie</mark>,
-        <mark style="background: #E0E0E0">Yet Another CloudWatch Exporter</mark>,
+        <mark style="background: #FFFFFF">Prometheus</mark>,
+        <mark style="background: #FFFFFF">VictoriaMetrics, VMalert, VMagent</mark>,
+        <mark style="background: #FFFFFF">Grafana</mark>,
+        <mark style="background: #FFFFFF">OpsGenie</mark>,
+        <mark style="background: #FFFFFF">Yet Another CloudWatch Exporter</mark>,
         <mark style="background: #A0A0A0">Zabbix</mark>
       - Service Discovery & Service Mesh: 
         <mark style="background: #FFFFFF">Consul</mark>
@@ -115,11 +118,12 @@ content:
         <mark style="background: #A0A0A0">Rust</mark>,
         <mark style="background: #A0A0A0">Go</mark>
       - Secret Management: 
-        <mark style="background: #E0E0E0">Vault</mark>
+        <mark style="background: #E0E0E0">Vault</mark>,
+        <mark style="background: #E0E0E0">AWS Secrets Manager</mark>,
       - Project Management & Knowledge Base:
-        <mark style="background: #FFFFFF">Monday</mark>
-        <mark style="background: #FFFFFF">Jira</mark>
-        <mark style="background: #E0E0E0">Confluence</mark>
+        <mark style="background: #FFFFFF">Confluence</mark>,
+        <mark style="background: #FFFFFF">Jira</mark>,
+        <mark style="background: #E0E0E0">Monday</mark>,
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
@@ -134,6 +138,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           Infrastructure as a code, SLIs/SLOs, being embedded in the development team, incidents response.
             - Documented and created Yet Another CloudWatch Exporter implementation for global codified alerts solution of AWS managed services.
+            - Documented and created Prometheus Blackbox Exporter implementation for global codified alerts solution of AWS managed services.
             - Cleaned up AWS accounts from part of unused resources and scaled-down part of over-provisioned resources.
             - Created and documented initial processes for ad-hoc task management and production changes.
           
