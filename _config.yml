@@ -199,6 +199,9 @@ content:
         sub_title: BSc Telecommunications Engineering
         quote: >
           Vilnius Gediminas Technical University (VILNIUS TECH) is a leading higher education institution situated in Vilnius the capital of Lithuania. Established in 1956 VILNIUS TECH is one of the biggest research universities in country with a focus on technologies and engineering and strong emphasis on university-business cooperation.
+        description: |
+          My university journey transformed me into a skilled collaborator and resourceful problem-solver, adept at navigating challenges within tight deadlines.
+
       - layout: left
         title: Instituto Politécnico de Viana do Castelo
         link: www.ipvc.pt/en/
@@ -206,11 +209,16 @@ content:
         sub_title: BSc Engenharia Eletrónica e Redes de Computadores (Erasmus studies)
         quote: >
           The Polytechnic Institute of Viana do Castelo (IPVC) was founded in 1980. Is a regional institution, whose aims are a qualified human, cultural, scientific, technical and professional training, to carry out necessary research to accomplish its mission and to cooperate with the regional community of Alto-Minho, particularly with its productive and entrepreneurial sectors.
+        description: |
+          My time during Erasmus studies fostered my ability to collaborate effectively in multicultural settings and appreciate diverse perspectives.
+      
       - layout: left
         title: Lieporiai secondary school
         link: www.lieporiai.lt
         caption: 1996 - 2008
         sub_title: Secondary education
+        quote: >
+          The school aims to maintain intensified English language education. 
         description: |
           Whether tackling complex technical challenges or communicating effectively, the physics and English skills I gained at this school remain invaluable assets in my journey.
 
