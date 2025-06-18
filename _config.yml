@@ -20,16 +20,14 @@ github_username:  elisauskas
 # About Section
 about_title: Professional Summary
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
- Hello 👋, 
-  
+about_content: | # this will include new lines to allow paragraphs  
  As a dedicated Site Reliability Engineer, I specialize in designing and maintaining robust, cost-efficient infrastructure that drives innovation and business growth. 
  With a strong FinOps mindset, I optimize resource utilization to maximize value and reduce operational costs. 
  My expertise extends beyond traditional system administration to include Infrastructure as Code (IaC), application platform management, comprehensive monitoring, and efficient CI/CD pipeline implementation.
 
  Proven in leading and collaborating within diverse teams, I bring a results-oriented approach and strategic vision to every project. 
  I am well-equipped to contribute effectively as a Site Reliability Engineer, Systems Architect, or Cloud Architect/Consultant, delivering scalable and resilient solutions that empower organizations to succeed.
-
+ 
 content:
   - title: Technologies Stack # Title for the section
     layout: text # Type of content section (list/text)
