@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgaras Lisauskas - Site Reliability Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233498db'%3E%3Cpath d='M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1c0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12-.22.39-.3.61-.22l2.49-1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z'/%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #e0e7ef;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cv-wrapper {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            page-break-after: avoid;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        }
+
+        .profile-info {
+            position: relative;
+            z-index: 2;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .download-txt-button {
+            background: linear-gradient(135deg, #27ae60, #2c3e50);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: absolute; /* Changed to absolute for positioning */
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-txt-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Content sections */
+        .content {
+            padding: 30px 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            page-break-after: avoid;
+        }
+
+        .about-content {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #3498db;
+        }
+
+        .about-content p {
+            margin-bottom: 1em; /* Adds space between paragraphs */
+        }
+
+        .about-content p:last-child {
+            margin-bottom: 0; /* No margin after the last paragraph */
+        }
+
+        /* Technologies Stack */
+        .tech-categories-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .tech-category-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            padding: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #3498db;
+            page-break-inside: avoid;
+        }
+
+        .tech-category-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .tech-category-card h3 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: transform 0.2s ease, background 0.3s ease;
+            white-space: nowrap;
+            background: #e9ecef;
+            color: #333;
+            border: 1px solid #dcdcdc;
+        }
+
+        .tech-tag:hover {
+            transform: scale(1.05);
+            background: #dcdcdc;
+        }
+
+        /* Experience Timeline */
+        .experience-timeline {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 15px;
+            bottom: 15px;
+            width: 2px;
+            background: linear-gradient(to bottom, #3498db, #2c3e50);
+        }
+
+        .experience-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            page-break-inside: avoid;
+            border: 1px solid #e9ecef;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -19px;
+            top: 20px;
+            width: 10px;
+            height: 10px;
+            background: #3498db;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #3498db;
+            z-index: 2;
+        }
+
+        .timeline-marker.current {
+            background: #27ae60;
+            box-shadow: 0 0 0 2px #27ae60, 0 0 0 4px rgba(39, 174, 96, 0.2);
+        }
+
+        .experience-content {
+            padding: 20px;
+        }
+
+        .job-header {
+            margin-bottom: 12px;
+        }
+
+        .company-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .role-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .position {
+            font-size: 1rem;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .duration {
+            background: #e9ecef;
+            color: #555;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .tenure {
+            background: #e9ecef;
+            color: #555;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .company-info {
+            margin-bottom: 18px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .company-description {
+            color: #555;
+            font-style: italic;
+            margin: 0;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .key-responsibilities h4 {
+            color: #2c3e50;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .achievement-grid {
+            display: grid;
+            gap: 10px;
+        }
+
+        .achievement-item {
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            padding: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            page-break-inside: avoid;
+        }
+
+        .achievement-item:hover {
+            border-color: #3498db;
+            transform: translateX(3px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .achievement-item p {
+            margin: 0;
+            color: #555;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        /* Education */
+        .education-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease;
+            page-break-inside: avoid;
+        }
+
+        .education-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .education-item .job-description {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+            margin-top: 8px;
+        }
+
+        /* Hobbies */
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .hobby-item {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            page-break-inside: avoid;
+        }
+
+        .hobby-item:hover {
+            transform: scale(1.03);
+        }
+
+        .hobby-item i {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .hobby-item h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .hobby-item p {
+            font-size: 0.9rem;
+        }
+
+        .haiku {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            page-break-inside: avoid;
+        }
+
+        .haiku h4 {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .haiku-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 15px;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .title {
+                font-size: 1rem;
+            }
+
+            .contact-info {
+                gap: 12px;
+            }
+
+            .contact-item {
+                font-size: 0.85rem;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+            }
+
+            .tech-categories-container {
+                grid-template-columns: 1fr;
+            }
+
+            .company-name {
+                font-size: 1.1rem;
+            }
+
+            .hobbies-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .download-txt-button {
+                position: static; /* Make it static on smaller screens */
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .name {
+                font-size: 1.6rem;
+            }
+
+            .tech-category-card {
+                padding: 12px;
+            }
+
+            .experience-content {
+                padding: 15px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        /* Scroll and Back to Top */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(52, 152, 219, 0.3);
+            z-index: 1000;
+        }
+
+        .scroll-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <div class="container">
+        <div class="cv-wrapper" id="cv-content">
+            <header class="header">
+                <div class="profile-info">
+                    <h1 class="name">Edgaras Lisauskas</h1>
+                    <p class="title">Site Reliability Engineer / Systems Engineer</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:edgaras.lisauskas@icloud.com" style="color: inherit; text-decoration: none;">edgaras.lisauskas@icloud.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+37065268437" style="color: inherit; text-decoration: none;">+370 652 68437</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/elisauskas" target="_blank" style="color: inherit; text-decoration: none;">elisauskas</a>
+                        </div>
+                    </div>
+                    <button class="download-txt-button" id="downloadTxt">
+                        <i class="fas fa-file-alt"></i> Download CV as TXT
+                    </button>
+                </div>
+            </header>
+
+            <main class="content">
+                <section class="section about-me-pdf">
+                    <h2 class="section-title">Professional Summary</h2>
+                    <div class="about-content">
+                        <p>As a dedicated Site Reliability Engineer, I specialize in designing and maintaining robust, cost-efficient infrastructure that drives innovation and business growth. With a strong FinOps mindset, I optimize resource utilization to maximize value and reduce operational costs. My expertise extends beyond traditional system administration to include Infrastructure as Code (IaC), application platform management, comprehensive monitoring, and efficient CI/CD pipeline implementation.</p>
+                        <p>Proven in leading and collaborating within diverse teams, I bring a results-oriented approach and strategic vision to every project. I am well-equipped to contribute effectively as a Site Reliability Engineer, Systems Architect, or Cloud Architect/Consultant, delivering scalable and resilient solutions that empower organizations to succeed.</p>
+                    </div>
+                </section>
+
+                <section class="section" id="technologies-stack-section">
+                    <h2 class="section-title">Technologies Stack</h2>
+                    <div class="tech-categories-container">
+                        <div class="tech-category-card">
+                            <h3>Amazon Web Services (AWS Specific)</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">ACM</span>
+                                <span class="tech-tag">CloudFront</span>
+                                <span class="tech-tag">CloudTrail</span>
+                                <span class="tech-tag">CloudWatch</span>
+                                <span class="tech-tag">EC2</span>
+                                <span class="tech-tag">ECR</span>
+                                <span class="tech-tag">ECS</span>
+                                <span class="tech-tag">EKS</span>
+                                <span class="tech-tag">ElastiCache</span>
+                                <span class="tech-tag">IAM</span>
+                                <span class="tech-tag">Lambda</span>
+                                <span class="tech-tag">RDS</span>
+                                <span class="tech-tag">Route53</span>
+                                <span class="tech-tag">S3</span>
+                                <span class="tech-tag">Secrets Manager</span>
+                                <span class="tech-tag">SNS</span>
+                                <span class="tech-tag">SQS</span>
+                                <span class="tech-tag">VPC</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Cloud Platforms</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">GCP</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Compute & Orchestration</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Consul</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Docker Compose</span>
+                                <span class="tech-tag">GKE</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">OpenVZ</span>
+                                <span class="tech-tag">ZooKeeper</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Continuous Integration & Delivery</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">GitLab CI</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">TeamCity</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Databases & Caching</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">ElasticSearch</span>
+                                <span class="tech-tag">Etcd</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Infrastructure as Code (IaC) & Automation</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Atlantis</span>
+                                <span class="tech-tag">Chef</span>
+                                <span class="tech-tag">Kustomize</span>
+                                <span class="tech-tag">Packer</span>
+                                <span class="tech-tag">Terraform</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Methodologies & Concepts</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Automation Principles</span>
+                                <span class="tech-tag">Cloud Architecture</span>
+                                <span class="tech-tag">DevOps</span>
+                                <span class="tech-tag">Disaster Recovery</span>
+                                <span class="tech-tag">FinOps</span>
+                                <span class="tech-tag">Process Improvement</span>
+                                <span class="tech-tag">SRE Principles</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Networking, Security & Web Servers</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Apache</span>
+                                <span class="tech-tag">AWS Secrets Manager</span>
+                                <span class="tech-tag">Kafka</span>
+                                <span class="tech-tag">Let's Encrypt</span>
+                                <span class="tech-tag">Nginx</span>
+                                <span class="tech-tag">RabbitMQ</span>
+                                <span class="tech-tag">Vault</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Observability & Monitoring</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Grafana</span>
+                                <span class="tech-tag">OpsGenie</span>
+                                <span class="tech-tag">Prometheus</span>
+                                <span class="tech-tag">VMagent</span>
+                                <span class="tech-tag">VMalert</span>
+                                <span class="tech-tag">VictoriaMetrics</span>
+                                <span class="tech-tag">Yet Another CloudWatch Exporter</span>
+                                <span class="tech-tag">Zabbix</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Operating Systems</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">CentOS</span>
+                                <span class="tech-tag">Debian</span>
+                                <span class="tech-tag">Kali Linux</span>
+                                <span class="tech-tag">OS X</span>
+                                <span class="tech-tag">Ubuntu</span>
+                                <span class="tech-tag">Windows</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Programming Languages & Scripting</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Bash</span>
+                                <span class="tech-tag">Go</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Rust</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Project Management & Knowledge Base</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Confluence</span>
+                                <span class="tech-tag">Jira</span>
+                                <span class="tech-tag">Monday</span>
+                            </div>
+                        </div>
+                        <div class="tech-category-card">
+                            <h3>Source Code Management & Registries</h3>
+                            <div class="tech-list">
+                                <span class="tech-tag">Artifactory</span>
+                                <span class="tech-tag">Docker Hub</span>
+                                <span class="tech-tag">Git</span>
+                                <span class="tech-tag">GitHub</span>
+                                <span class="tech-tag">GitLab</span>
+                                <span class="tech-tag">GCR</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section experience-pdf">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="experience-timeline">
+                        <div class="experience-item">
+                            <div class="timeline-marker current"></div>
+                            <div class="experience-content">
+                                <div class="job-header">
+                                    <h3 class="company-name">Workato</h3>
+                                    <div class="company-info">
+                                        <p class="company-description">Leading Intelligent Automation platform (Gartner Magic Quadrant leader) serving both Business and IT teams</p>
+                                    </div>
+                                    <div class="role-info">
+                                        <span class="position">Senior Site Reliability Engineer</span>
+                                        <span class="duration">Sep 2022 - Present</span>
+                                        <span class="tenure">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="key-responsibilities">
+                                    <h4>Key Achievements</h4>
+                                    <div class="achievement-grid">
+                                        <div class="achievement-item">
+                                            <p><strong>PostgreSQL Infrastructure Upgrade:</strong> Led major version upgrades for PostgreSQL across multiple clusters and environments, streamlining processes and minimizing downtime by collaborating with cross-functional teams and automating key tasks.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Automated Database Configuration:</strong> Developed and implemented Ansible-based automation for PostgreSQL configuration management during RDS cluster provisioning step, ensuring consistent and reliable deployments despite AWS and environment-specific constraints.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Enhanced Monitoring Infrastructure:</strong> Deployed Yet Another CloudWatch Exporter for AWS alerting and Prometheus Blackbox Exporter for external service monitoring, greatly improving observability and monitoring coverage across all environments.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Cost Optimization:</strong> Reduced operational expenses by cleaning up unused AWS resources and right-sizing over-provisioned infrastructure, achieving significant cost savings without compromising performance.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Process Standardization:</strong> Established and enforced standardized procedures for ad-hoc task management and production changes, increasing team efficiency and reducing operational risks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="timeline-marker"></div>
+                            <div class="experience-content">
+                                <div class="job-header">
+                                    <h3 class="company-name">Wix.com</h3>
+                                    <div class="company-info">
+                                        <p class="company-description">Global cloud-based web development platform serving millions of users worldwide</p>
+                                    </div>
+                                    <div class="role-info">
+                                        <span class="position">System Engineer</span>
+                                        <span class="duration">May 2020 - Sep 2022</span>
+                                        <span class="tenure">2.5 years</span>
+                                    </div>
+                                </div>
+                                <div class="key-responsibilities">
+                                    <h4>Key Achievements</h4>
+                                    <div class="achievement-grid">
+                                        <div class="achievement-item">
+                                            <p><strong>Multi-Cloud Infrastructure Deployment:</strong> Built a complete AWS datacenter from the ground up, including DNS, ZooKeeper, Consul, and EKS clusters using Terraform modules. This enabled geographic expansion, improved disaster recovery capabilities, and achieved cost savings in the new region.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Kubernetes Cluster Migration:</strong> Led complex k8s cluster migrations through multiple kOps versions with major Terraform upgrades, ensuring zero-downtime transitions while maintaining service reliability for millions of users.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Production GKE Deployment:</strong> Successfully deployed and validated production-ready GKE clusters across multiple regions, expanding the company's multi-cloud strategy and improving global service availability.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="timeline-marker"></div>
+                            <div class="experience-content">
+                                <div class="job-header">
+                                    <h3 class="company-name">Shift4 Payments</h3>
+                                    <div class="company-info">
+                                        <p class="company-description">NYSE-listed payment processing and technology solutions provider</p>
+                                    </div>
+                                    <div class="role-info">
+                                        <span class="position">DevOps Engineer</span>
+                                        <span class="duration">Jan 2018 - May 2020</span>
+                                        <span class="tenure">2.5 years</span>
+                                    </div>
+                                </div>
+                                <div class="key-responsibilities">
+                                    <h4>Key Achievements</h4>
+                                    <div class="achievement-grid">
+                                        <div class="achievement-item">
+                                            <p><strong>CI/CD Infrastructure Migration:</strong> Successfully migrated entire CI/CD infrastructure from legacy Jenkins to GitLab CI, decommissioning outdated systems and modernizing development workflows while maintaining business continuity.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Application Platform Modernization:</strong> Modernized critical payment processing applications by migrating from ElasticBeanstalk to ECS container platform, improving scalability, deployment efficiency, and operational management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="timeline-marker"></div>
+                            <div class="experience-content">
+                                <div class="job-header">
+                                    <h3 class="company-name">Ruptela, UAB</h3>
+                                    <div class="company-info">
+                                        <p class="company-description">GPS tracking hardware manufacturer and software solutions provider</p>
+                                    </div>
+                                    <div class="role-info">
+                                        <span class="position">Senior Technical Support Engineer → IT Systems Administrator</span>
+                                        <span class="duration">Jan 2013 - Jan 2018</span>
+                                        <span class="tenure">5 years</span>
+                                    </div>
+                                </div>
+                                <div class="key-responsibilities">
+                                    <h4>Key Achievements</h4>
+                                    <div class="achievement-grid">
+                                        <div class="achievement-item">
+                                            <p><strong>Global GPS Infrastructure Management:</strong> Managed worldwide GPS tracking infrastructure upgrades and complex system migrations, ensuring continuous service availability for an international hardware manufacturer with minimal business disruption.</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <p><strong>Device Automation Development:</strong> Developed comprehensive automated device reconfiguration processes in collaboration with cross-functional teams, significantly reducing manual intervention and improving operational efficiency.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <div class="job-header">
+                            <h3 class="company-name">Vilnius Tech</h3>
+                            <div class="role-info">
+                                <p class="position">BSc Telecommunications Engineering</p>
+                                <span class="duration">2008 - 2012</span>
+                            </div>
+                        </div>
+                        <p class="job-description">
+                            My university journey transformed me into a skilled collaborator and resourceful problem-solver, adept at navigating challenges within tight deadlines.
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="job-header">
+                            <h3 class="company-name">Instituto Politécnico de Viana do Castelo</h3>
+                            <div class="role-info">
+                                <p class="position">BSc Engenharia Eletrónica e Redes de Computadores (Erasmus)</p>
+                                <span class="duration">2010 - 2011</span>
+                            </div>
+                        </div>
+                        <p class="job-description">
+                            My time during Erasmus studies fostered my ability to collaborate effectively in multicultural settings and appreciate diverse perspectives.
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="job-header">
+                            <h3 class="company-name">Lieporiai secondary school</h3>
+                            <div class="role-info">
+                                <p class="position">Secondary education</p>
+                                <span class="duration">1996 - 2008</span>
+                            </div>
+                        </div>
+                        <p class="job-description">
+                            The school aims to maintain intensified English language education. Whether tackling complex technical challenges or communicating effectively, the physics and English skills I gained at this school remain invaluable assets in my journey.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Interests & Hobbies</h2>
+                    <div class="hobbies-grid">
+                        <div class="hobby-item">
+                            <i class="fas fa-wrench"></i>
+                            <h4>Automotive Repair</h4>
+                            <p>Cars & Motorcycles</p>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-book"></i>
+                            <h4>Reading</h4>
+                            <p>Relax & Continuous Learning</p>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-heartbeat"></i> <h4>Football & Padel</h4>
+                            <p>Team & Racket Sports</p>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-route"></i>
+                            <h4>Exploration</h4>
+                            <p>Scenic Drives & Nature Walks</p>
+                        </div>
+                    </div>
+
+                    <div class="haiku">
+                        <h4>"The Blueprint Blues" (haiku) by myself</h4>
+                        <div class="haiku-text">
+                            <em>Decisions were made,</em><br>
+                            <em>Presentations were given,</em><br>
+                            <em>Architect's role played.</em>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('scrollProgress').style.width = scrolled + '%';
+
+            // Back to top button
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Back to top functionality
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // TXT Download functionality
+        document.getElementById('downloadTxt').addEventListener('click', () => {
+            const name = document.querySelector('.name').innerText;
+            const title = document.querySelector('.title').innerText;
+            const email = document.querySelector('.contact-item a[href^="mailto:"]').innerText;
+            const phone = document.querySelector('.contact-item a[href^="tel:"]').innerText;
+            // Get the full GitHub URL directly from the href attribute
+            const githubLink = document.querySelector('.contact-item a[href*="github.com"]').href;
+            
+            // Define the CV site URL
+            const cvSite = "https://elisauskas.github.io/cv";
+            
+            // Get professional summary content, preserving paragraph breaks
+            const professionalSummaryParagraphs = Array.from(document.querySelectorAll('.about-content p')).map(p => p.innerText);
+            const professionalSummary = professionalSummaryParagraphs.join('\n\n'); // Join with double newline for paragraph spacing in TXT
+
+            let txtContent = `${name}\n${title}\n\n`;
+            txtContent += `Contact:\nEmail: ${email}\nPhone: ${phone}\nGitHub: ${githubLink}\nCV site: ${cvSite}\n\n`;
+
+            txtContent += `PROFESSIONAL SUMMARY\n${'-'.repeat('PROFESSIONAL SUMMARY'.length)}\n${professionalSummary}\n\n`;
+
+            // Add Technologies Stack to TXT
+            txtContent += `TECHNOLOGIES STACK\n${'-'.repeat('TECHNOLOGIES STACK'.length)}\n`;
+            document.querySelectorAll('#technologies-stack-section .tech-category-card').forEach(categoryCard => {
+                const categoryTitle = categoryCard.querySelector('h3').innerText;
+                const techTags = Array.from(categoryCard.querySelectorAll('.tech-tag')).map(tag => tag.innerText);
+                txtContent += `  ${categoryTitle}: ${techTags.join(', ')}\n`;
+            });
+            txtContent += '\n';
+
+
+            txtContent += `PROFESSIONAL EXPERIENCE\n${'-'.repeat('PROFESSIONAL EXPERIENCE'.length)}\n`;
+            document.querySelectorAll('.experience-item').forEach(item => {
+                const companyName = item.querySelector('.company-name').innerText;
+                const companyDescription = item.querySelector('.company-description') ? item.querySelector('.company-description').innerText : '';
+                const position = item.querySelector('.position').innerText;
+                const duration = item.querySelector('.duration').innerText;
+                txtContent += `${companyName} - ${position} (${duration})\n`;
+                if (companyDescription) {
+                    txtContent += `  About company: ${companyDescription}\n`;
+                }
+                txtContent += `  Key Achievements:\n`;
+                item.querySelectorAll('.achievement-item p').forEach(achievement => {
+                    txtContent += `    • ${achievement.innerText.replace(':', ': ')}\n`;
+                });
+                txtContent += '\n';
+            });
+
+            txtContent += `EDUCATION\n${'-'.repeat('EDUCATION'.length)}\n`;
+            document.querySelectorAll('.education-item').forEach(item => {
+                const schoolName = item.querySelector('.company-name').innerText;
+                const degree = item.querySelector('.position').innerText;
+                const duration = item.querySelector('.duration').innerText;
+                const description = item.querySelector('.job-description').innerText;
+                txtContent += `${schoolName} - ${degree} (${duration})\n`;
+                txtContent += `  ${description}\n\n`;
+            });
+
+            // Add Interests & Hobbies to TXT
+            let hobbiesTitle = "Interests & Hobbies"; // Default fallback
+            document.querySelectorAll('.section-title').forEach(titleElement => {
+                if (titleElement.innerText.includes("Interests & Hobbies")) {
+                    hobbiesTitle = titleElement.innerText;
+                }
+            });
+            txtContent += `${hobbiesTitle.toUpperCase()}\n${'-'.repeat(hobbiesTitle.length)}\n`;
+            document.querySelectorAll('.hobby-item').forEach(hobbyItem => {
+                const hobbyName = hobbyItem.querySelector('h4').innerText;
+                const hobbyDescription = hobbyItem.querySelector('p').innerText;
+                txtContent += `  - ${hobbyName}: ${hobbyDescription}\n`;
+            });
+            
+            const haikuTitleElement = document.querySelector('.haiku h4');
+            const haikuTitle = haikuTitleElement ? haikuTitleElement.innerText : "";
+            
+            const haikuTextElement = document.querySelector('.haiku-text');
+            const haikuText = haikuTextElement ? haikuTextElement.innerText.trim().split('\n').map(line => line.trim()).join('\n') : "";
+            
+            if (haikuTitle || haikuText) {
+                txtContent += `\n${haikuTitle}\n${haikuText}\n\n`;
+            }
+
+
+            const blob = new Blob([txtContent], { type: 'text/plain;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Edgaras_Lisauskas_CV.txt';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
